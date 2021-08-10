@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F215EE882620374500F7ABCE /* unet18_112.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F215EE872620374500F7ABCE /* unet18_112.mlmodel */; };
+		F215EE952621B54300F7ABCE /* gaze_mobilenetv2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F215EE942621B54300F7ABCE /* gaze_mobilenetv2.mlmodel */; };
+		F26090E2261DE4BD007B1598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26090E1261DE4BD007B1598 /* AppDelegate.swift */; };
+		F26090E4261DE4BD007B1598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26090E3261DE4BD007B1598 /* SceneDelegate.swift */; };
+		F26090E6261DE4BD007B1598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26090E5261DE4BD007B1598 /* ViewController.swift */; };
+		F26090E9261DE4BD007B1598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26090E7261DE4BD007B1598 /* Main.storyboard */; };
+		F26090EB261DE4BE007B1598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26090EA261DE4BE007B1598 /* Assets.xcassets */; };
+		F26090EE261DE4BE007B1598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26090EC261DE4BE007B1598 /* LaunchScreen.storyboard */; };
+		F26090F7261DE6B7007B1598 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26090F6261DE6B7007B1598 /* opencv2.framework */; };
+		F26090FC261DE712007B1598 /* OpticalFlow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F26090FA261DE712007B1598 /* OpticalFlow.cpp */; };
+		F2609101261ED78C007B1598 /* OpticalFlowBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2609100261ED78C007B1598 /* OpticalFlowBridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F215EE872620374500F7ABCE /* unet18_112.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = unet18_112.mlmodel; sourceTree = "<group>"; };
+		F215EE942621B54300F7ABCE /* gaze_mobilenetv2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gaze_mobilenetv2.mlmodel; sourceTree = "<group>"; };
+		F26090DE261DE4BD007B1598 /* GazeTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GazeTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26090E1261DE4BD007B1598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F26090E3261DE4BD007B1598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F26090E5261DE4BD007B1598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F26090E8261DE4BD007B1598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26090EA261DE4BE007B1598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26090ED261DE4BE007B1598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26090EF261DE4BE007B1598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26090F6261DE6B7007B1598 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		F26090F9261DE712007B1598 /* GazeTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GazeTracking-Bridging-Header.h"; sourceTree = "<group>"; };
+		F26090FA261DE712007B1598 /* OpticalFlow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpticalFlow.cpp; sourceTree = "<group>"; };
+		F26090FB261DE712007B1598 /* OpticalFlow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpticalFlow.hpp; sourceTree = "<group>"; };
+		F26090FF261ED758007B1598 /* OpticalFlowBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpticalFlowBridge.h; sourceTree = "<group>"; };
+		F2609100261ED78C007B1598 /* OpticalFlowBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpticalFlowBridge.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26090DB261DE4BD007B1598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26090F7261DE6B7007B1598 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F26090D5261DE4BD007B1598 = {
+			isa = PBXGroup;
+			children = (
+				F2609100261ED78C007B1598 /* OpticalFlowBridge.mm */,
+				F26090FF261ED758007B1598 /* OpticalFlowBridge.h */,
+				F26090FA261DE712007B1598 /* OpticalFlow.cpp */,
+				F26090FB261DE712007B1598 /* OpticalFlow.hpp */,
+				F26090F6261DE6B7007B1598 /* opencv2.framework */,
+				F26090E0261DE4BD007B1598 /* GazeTracking */,
+				F26090DF261DE4BD007B1598 /* Products */,
+				F26090F9261DE712007B1598 /* GazeTracking-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		F26090DF261DE4BD007B1598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26090DE261DE4BD007B1598 /* GazeTracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26090E0261DE4BD007B1598 /* GazeTracking */ = {
+			isa = PBXGroup;
+			children = (
+				F215EE942621B54300F7ABCE /* gaze_mobilenetv2.mlmodel */,
+				F215EE872620374500F7ABCE /* unet18_112.mlmodel */,
+				F26090E1261DE4BD007B1598 /* AppDelegate.swift */,
+				F26090E3261DE4BD007B1598 /* SceneDelegate.swift */,
+				F26090E5261DE4BD007B1598 /* ViewController.swift */,
+				F26090E7261DE4BD007B1598 /* Main.storyboard */,
+				F26090EA261DE4BE007B1598 /* Assets.xcassets */,
+				F26090EC261DE4BE007B1598 /* LaunchScreen.storyboard */,
+				F26090EF261DE4BE007B1598 /* Info.plist */,
+			);
+			path = GazeTracking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26090DD261DE4BD007B1598 /* GazeTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26090F2261DE4BE007B1598 /* Build configuration list for PBXNativeTarget "GazeTracking" */;
+			buildPhases = (
+				F26090DA261DE4BD007B1598 /* Sources */,
+				F26090DB261DE4BD007B1598 /* Frameworks */,
+				F26090DC261DE4BD007B1598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GazeTracking;
+			productName = GazeTracking;
+			productReference = F26090DE261DE4BD007B1598 /* GazeTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26090D6261DE4BD007B1598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F26090DD261DE4BD007B1598 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = F26090D9261DE4BD007B1598 /* Build configuration list for PBXProject "GazeTracking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26090D5261DE4BD007B1598;
+			productRefGroup = F26090DF261DE4BD007B1598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26090DD261DE4BD007B1598 /* GazeTracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26090DC261DE4BD007B1598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26090EE261DE4BE007B1598 /* LaunchScreen.storyboard in Resources */,
+				F26090EB261DE4BE007B1598 /* Assets.xcassets in Resources */,
+				F26090E9261DE4BD007B1598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26090DA261DE4BD007B1598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26090FC261DE712007B1598 /* OpticalFlow.cpp in Sources */,
+				F215EE952621B54300F7ABCE /* gaze_mobilenetv2.mlmodel in Sources */,
+				F26090E6261DE4BD007B1598 /* ViewController.swift in Sources */,
+				F26090E2261DE4BD007B1598 /* AppDelegate.swift in Sources */,
+				F2609101261ED78C007B1598 /* OpticalFlowBridge.mm in Sources */,
+				F215EE882620374500F7ABCE /* unet18_112.mlmodel in Sources */,
+				F26090E4261DE4BD007B1598 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F26090E7261DE4BD007B1598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26090E8261DE4BD007B1598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26090EC261DE4BE007B1598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26090ED261DE4BE007B1598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26090F0261DE4BE007B1598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F26090F1261DE4BE007B1598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26090F3261DE4BE007B1598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MJHLN88Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GazeTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = imon.GazeTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazeTracking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F26090F4261DE4BE007B1598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MJHLN88Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GazeTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = imon.GazeTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazeTracking-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26090D9261DE4BD007B1598 /* Build configuration list for PBXProject "GazeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26090F0261DE4BE007B1598 /* Debug */,
+				F26090F1261DE4BE007B1598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26090F2261DE4BE007B1598 /* Build configuration list for PBXNativeTarget "GazeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26090F3261DE4BE007B1598 /* Debug */,
+				F26090F4261DE4BE007B1598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26090D6261DE4BD007B1598 /* Project object */;
+}
